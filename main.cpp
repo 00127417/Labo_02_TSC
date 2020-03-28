@@ -1,3 +1,5 @@
+/*author code: HUGO AMILCAR PINTO LEON*/
+
 #include<fstream>
 #include<iostream>
 #include "classes.h"

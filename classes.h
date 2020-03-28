@@ -1,3 +1,4 @@
+/*author code: HUGO AMILCAR PINTO LEON*/
 enum lines{NOLINE, SINGLELINE, DOUBLELINE};
 enum modes{NOMODE, INT_FLOAT, INT_INT_INT};
 enum parameters{THERMAL_CONDUCTIVITY, HEAT_SOURCE};
@@ -32,7 +33,7 @@ public:
   }
 
   virtual void setIntFloat(int n, float r) = 0 ;
-  
+
   virtual void setIntIntInt(int n1, int n2, int n3) = 0;
 
 };
@@ -42,7 +43,7 @@ class node : public item{
 public:
  void setIntFloat(int identificador, float x_coordinate){
   id = identificador;
-  x = x_coordinate;  
+  x = x_coordinate;
  }
 
  void setIntIntInt(int n1, int n2, int n3){
@@ -78,7 +79,7 @@ class condition: public item{
 
 class mesh{
         float parameters[2];
-        int sizes[4]; 
+        int sizes[4];
         node *node_list;
         element *element_list;
         condition *dirichlet_list;
